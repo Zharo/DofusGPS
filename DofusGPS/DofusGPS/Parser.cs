@@ -33,6 +33,9 @@ namespace DofusGPS
                 result = client.GetAsync(uri).Result.Content.ReadAsStringAsync().Result;
             }
 
+            // On enlève le " à la fin
+            result = result.Substring(0,result.Length - 2);
+
             // Parsing à proprement parler
 
             List<KeyValuePair<int,string>> list = new List<KeyValuePair<int,string>>();
@@ -73,11 +76,17 @@ namespace DofusGPS
                         x = Int32.Parse(e.Value.Substring(cursor, i - cursor));
                         cursor = i + 1;
                     }
-                    else if (e.Value[i].Equals(' ') || e.Value[i].Equals('+') || i+1 >= e.Value.Length)
+                    else if (e.Value[i].Equals(' ') || e.Value[i].Equals('+'))
                     {
                         y = Int32.Parse(e.Value.Substring(cursor, i - cursor));
                         cursor = i + 1;
                         coordinates.Add(new KeyValuePair<int,int[]>(e.Key,new int[]{x,y}));
+                    }
+                    else if (i + 1 >= e.Value.Length)
+                    {
+                        y = Int32.Parse(e.Value.Substring(cursor, e.Value.Length - cursor));
+                        cursor = i + 1;
+                        coordinates.Add(new KeyValuePair<int, int[]>(e.Key, new int[]{x,y}));
                     }
                 }
             }

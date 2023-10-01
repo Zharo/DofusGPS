@@ -15,6 +15,7 @@ namespace DofusGPS
         static int Width { get => MaxX-MinX; }
         static int Height { get => MaxY-MinY; }
         int[,] Matrix { get; set; }
+
         public Map()
         {
             // Création de la map sous forme de tableau 2D (0 par défaut)
@@ -23,7 +24,7 @@ namespace DofusGPS
 
         public void setElementAt(int i, int j, int val)
         {
-            Matrix[i, j] = val; 
+            Matrix[i+Math.Abs(MinY), j+Math.Abs(MinX)] = val; 
         }
 
         public override string ToString()
