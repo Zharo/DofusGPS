@@ -20,5 +20,24 @@ namespace DofusGPS
             // Création de la map sous forme de tableau 2D (0 par défaut)
             Matrix = new int[Height, Width];
         }
+
+        public void setElementAt(int i, int j, int val)
+        {
+            Matrix[i, j] = val; 
+        }
+
+        public override string ToString()
+        {
+            string map_string = "";
+            for(int i = 0; i < Height; i++)
+            {
+                for(int j = 0; j < Width; j++)
+                {
+                    map_string += Matrix[i,j];
+                }
+                map_string += "\n";
+            }
+            return map_string;
+        }
     }
 }

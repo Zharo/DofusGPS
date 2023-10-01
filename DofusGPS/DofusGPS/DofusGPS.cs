@@ -20,6 +20,10 @@ namespace DofusGPS
         {
             Parser parser = new Parser();
             Map map = parser.Parse("https://dofus-map.com/getRessourceData.php?ressourceId=36&groupId=0");
+
+            // On affiche la map
+            Console.WriteLine(map.ToString());
+            Console.ReadLine();
         }
     }
 }
