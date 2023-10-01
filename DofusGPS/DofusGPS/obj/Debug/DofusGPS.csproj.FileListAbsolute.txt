@@ -1,0 +1,8 @@
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\bin\Debug\DofusGPS.exe.config
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\bin\Debug\DofusGPS.exe
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\bin\Debug\DofusGPS.pdb
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\obj\Debug\DofusGPS.csproj.AssemblyReference.cache
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\obj\Debug\DofusGPS.csproj.SuggestedBindingRedirects.cache
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\obj\Debug\DofusGPS.csproj.CoreCompileInputs.cache
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\obj\Debug\DofusGPS.exe
+C:\Users\gouwa\Documents\Projet dofus\DofusGPS\DofusGPS\DofusGPS\obj\Debug\DofusGPS.pdb
